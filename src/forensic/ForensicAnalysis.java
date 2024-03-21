@@ -142,11 +142,7 @@ public class ForensicAnalysis {
         int count = 0; 
         if(root != null) {
             matchingProfile(root.getLeft(), val); 
-            if(root.getProfile().getMarkedStatus() == false && root.getProfile().getMarkedStatus() == val) {
-                count++; 
-            }
-
-            else if(root.getProfile().getMarkedStatus() == true && root.getProfile().getMarkedStatus() == val) {
+            if(root.getProfile().getMarkedStatus() == val) {
                 count++; 
             }
             matchingProfile(root.getRight(), val);
